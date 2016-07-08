@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bilimiletisimi.bilimiletisimi.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/constraintLayout">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="insideOverlay"
+            android:id="@+id/scrollView">
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myWebView"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            tools:layout_constraintTop_creator="1" />
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

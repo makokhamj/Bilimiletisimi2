@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_single_site"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bilimiletisimi.bilimiletisimi.singleSite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        android:id="@+id/scrollView"
+        app:layout_constraintLeft_toRightOf="@+id/content_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/content_main"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/content_main"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/content_main"
+        tools:layout_constraintBottom_creator="1">
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myWebView"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            tools:layout_constraintTop_creator="1" />
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
